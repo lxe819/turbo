@@ -1,0 +1,21 @@
+{
+  "name": "cyclic-deploy",
+  "version": "1.0.0",
+  "description": "Alternative way to setup (for cyclic) using turborepo & npm workspaces",
+  "main": "index.js",
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev", 
+    "start": "cd apps/server && npm run start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "turbo": "^1.5.5"
+  }, 
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ]
+}
